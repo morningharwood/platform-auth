@@ -77,7 +77,8 @@
       "name": "good-morning-ui",
       "root": "libs/good-morning-ui/src",
       "test": "../../../test.js",
-      "appRoot": ""
+      "appRoot": "",
+      "prefix": "gm"
     }
   ]
 }
