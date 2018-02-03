@@ -1,11 +1,70 @@
 import { Action } from '@ngrx/store';
+import { Update } from '@ngrx/entity';
+import { User } from '../model/user.model';
 
 export enum UserActionTypes {
-  UserAction = '[User] Action'
+  LoadUsers = '[User] Load Users',
+  AddUser = '[User] Add User',
+  AddUsers = '[User] Add Users',
+  UpdateUser = '[User] Update User',
+  UpdateUsers = '[User] Update Users',
+  DeleteUser = '[User] Delete User',
+  DeleteUsers = '[User] Delete Users',
+  ClearUsers = '[User] Clear Users'
 }
 
-export class User implements Action {
-  readonly type = UserActionTypes.UserAction;
+export class LoadUsers implements Action {
+  readonly type = UserActionTypes.LoadUsers;
+
+  constructor(public payload: { users: User[] }) {}
 }
 
-export type UserActions = User;
+export class AddUser implements Action {
+  readonly type = UserActionTypes.AddUser;
+
+  constructor(public payload: { user: User }) {}
+}
+
+export class AddUsers implements Action {
+  readonly type = UserActionTypes.AddUsers;
+
+  constructor(public payload: { users: User[] }) {}
+}
+
+export class UpdateUser implements Action {
+  readonly type = UserActionTypes.UpdateUser;
+
+  constructor(public payload: { user: Update<User> }) {}
+}
+
+export class UpdateUsers implements Action {
+  readonly type = UserActionTypes.UpdateUsers;
+
+  constructor(public payload: { users: Update<User>[] }) {}
+}
+
+export class DeleteUser implements Action {
+  readonly type = UserActionTypes.DeleteUser;
+
+  constructor(public payload: { id: string }) {}
+}
+
+export class DeleteUsers implements Action {
+  readonly type = UserActionTypes.DeleteUsers;
+
+  constructor(public payload: { ids: string[] }) {}
+}
+
+export class ClearUsers implements Action {
+  readonly type = UserActionTypes.ClearUsers;
+}
+
+export type UserActions =
+  | LoadUsers
+  | AddUser
+  | AddUsers
+  | UpdateUser
+  | UpdateUsers
+  | DeleteUser
+  | DeleteUsers
+  | ClearUsers;
