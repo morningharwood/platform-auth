@@ -9,23 +9,18 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-
     "apps:affected": "./node_modules/.bin/nx affected apps",
     "build:affected": "./node_modules/.bin/nx affected build",
     "e2e:affected": "./node_modules/.bin/nx affected e2e",
-
     "affected:apps": "./node_modules/.bin/nx affected apps",
     "affected:build": "./node_modules/.bin/nx affected build",
     "affected:e2e": "./node_modules/.bin/nx affected e2e",
-
     "format": "./node_modules/.bin/nx format write",
     "format:write": "./node_modules/.bin/nx format write",
     "format:check": "./node_modules/.bin/nx format check",
-
     "nx-migrate": "./node_modules/.bin/nx migrate",
     "nx-migrate:check": "./node_modules/.bin/nx migrate check",
     "nx-migrate:skip": "./node_modules/.bin/nx migrate skip",
-
     "postinstall": "./node_modules/.bin/nx migrate check"
   },
   "private": true,
@@ -38,14 +33,16 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ngrx/effects": "^4.1.1",
+    "@ngrx/entity": "^5.0.1",
+    "@ngrx/router-store": "^4.1.1",
+    "@ngrx/schematics": "^5.0.0",
+    "@ngrx/store": "^4.1.1",
+    "@ngrx/store-devtools": "^4.0.0",
+    "@nrwl/nx": "0.7.3",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
-    "@nrwl/nx": "0.7.3",
-    "@ngrx/effects": "4.1.1",
-    "@ngrx/router-store": "4.1.1",
-    "@ngrx/store": "4.1.1",
-    "@ngrx/store-devtools": "4.0.0"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "file:.angular_cli165.tgz",
