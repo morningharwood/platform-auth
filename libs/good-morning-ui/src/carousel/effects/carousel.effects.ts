@@ -4,7 +4,7 @@ import { CarouselActions, CarouselActionTypes } from '../actions/carousel.action
 
 @Injectable()
 export class CarouselEffects {
-  @Effect() effect$ = this.actions$.ofType(CarouselActionTypes.CarouselAction);
+  
 
   constructor(private actions$: Actions) {}
 }

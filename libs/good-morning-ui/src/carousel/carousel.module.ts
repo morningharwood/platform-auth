@@ -6,12 +6,14 @@ import * as fromCarousel from './reducers/carousel.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { CarouselEffects } from './effects/carousel.effects';
 
+
 @NgModule({
   imports: [
     CommonModule,
     StoreModule.forFeature('carousel', fromCarousel.reducer),
-    EffectsModule.forFeature([CarouselEffects])
+    EffectsModule.forFeature([ CarouselEffects ]),
   ],
-  declarations: [MasterComponent]
+  declarations: [ MasterComponent ],
+  exports: [ MasterComponent ],
 })
 export class CarouselModule {}
