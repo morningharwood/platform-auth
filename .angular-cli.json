@@ -42,7 +42,9 @@
       ]
     },
     "styleExt": "css",
-    "component": {}
+    "component": {
+      "changeDetection": "OnPush"
+    }
   },
   "warnings": {
     "typescriptMismatch": false
@@ -79,6 +81,12 @@
       "test": "../../../test.js",
       "appRoot": "",
       "prefix": "gm"
+    },
+    {
+      "name": "role",
+      "root": "libs/role/src",
+      "test": "../../../test.js",
+      "appRoot": ""
     }
   ]
 }

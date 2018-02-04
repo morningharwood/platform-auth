@@ -1,3 +1,8 @@
-<p>
-  master works!
-</p>
+<mat-form-field>
+  <mat-select placeholder="Pick carousel">
+    <mat-option *ngFor="let car of carousel" [value]="car.value">
+      {{ car.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mh-formly></mh-formly>

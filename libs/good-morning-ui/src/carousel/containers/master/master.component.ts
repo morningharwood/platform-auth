@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Carousel } from '@morningharwood/good-morning-ui';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -7,7 +8,9 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./master.component.css']
 })
 export class MasterComponent implements OnInit {
-  constructor(private store: Store<any>) {}
+  @Input() carousel: Carousel;
+
+  constructor() {}
 
   ngOnInit() {}
 }

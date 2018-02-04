@@ -1,2 +1,4 @@
-<app-user-master></app-user-master>
-<app-carousel-master></app-carousel-master>
+<app-user-master [users]="usersObs | async"
+                 [carousels]="carouselObs | async"
+                 (update)="updateUser($event)">
+</app-user-master>

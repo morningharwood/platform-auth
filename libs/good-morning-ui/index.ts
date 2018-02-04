@@ -6,6 +6,6 @@ export {
   selectIds,
   selectEntities,
   selectAll,
-  selectTotal,
+  selectTotal
 } from './src/carousel/reducers/carousel.reducer';
 export { Carousel } from './src/carousel/model/carousel.model';

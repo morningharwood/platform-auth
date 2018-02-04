@@ -68,16 +68,17 @@
     ],
     "unified-signatures": true,
     "variable-name": false,
+    "ordered-imports": true,
     "directive-selector": [
       true,
       "attribute",
-
+      "mh",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "mh",
       "kebab-case"
     ],
     "no-output-on-prefix": true,
@@ -90,7 +91,6 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-
     "nx-enforce-module-boundaries": [
       true,
       {
