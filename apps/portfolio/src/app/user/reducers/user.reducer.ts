@@ -1,9 +1,9 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
-import { createFeatureSelector, ActionReducerMap } from '@ngrx/store';
-import { User } from '../model/user.model';
+import { reducer as carouselReducer } from '@morningharwood/good-morning-ui';
+import { State as roleState } from '@morningharwood/role';
+import { createEntityAdapter, EntityAdapter, EntityState } from '@ngrx/entity';
+import { ActionReducerMap, createFeatureSelector } from '@ngrx/store';
 import { UserActions, UserActionTypes } from '../actions/user.actions';
-
-import { State as carouselState, reducer as carouselReducer } from '@morningharwood/good-morning-ui';
+import { User } from '../model/user.model';
 
 export interface State extends EntityState<User> {
   // additional entities state properties

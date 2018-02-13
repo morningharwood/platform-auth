@@ -1,0 +1,9 @@
+.fab-container {
+  position: fixed;
+  bottom: 72px;
+  right: 72px;
+}
+
+.fab-text {
+  font-size: 24px;
+}

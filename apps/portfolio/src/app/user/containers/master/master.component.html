@@ -2,10 +2,14 @@
   Users
 </p>
 
-<div *ngFor="let user of users">
-  <mh-user-row [user]="user"
-               [roles]="carousels">
-  </mh-user-row>
-  <app-carousel-master [carousel]="carousels"></app-carousel-master>
-  <button (click)="updateUserRole()">Updateee</button>
-</div>
+<!--<div *ngFor="let user of users">-->
+<!--<mh-user-row [user]="user"-->
+<!--[roles]="carousels">-->
+<!--</mh-user-row>-->
+<!--<app-carousel-master [carousel]="carousels"></app-carousel-master>-->
+<!--<button (click)="updateUserRole()">Updateee</button>-->
+<!--</div>-->
+<mh-role-master
+  (update)="updateRole($event)"
+  (add)="addRole($event)">
+</mh-role-master>

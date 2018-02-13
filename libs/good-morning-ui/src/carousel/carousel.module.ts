@@ -13,10 +13,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
+import { FormlyComponent } from './components/formly/formly.component';
 import { MasterComponent } from './containers/master/master.component';
 import { CarouselEffects } from './effects/carousel.effects';
 import * as fromCarousel from './reducers/carousel.reducer';
-import { FormlyComponent } from './components/formly/formly.component';
 
 @NgModule({
   imports: [

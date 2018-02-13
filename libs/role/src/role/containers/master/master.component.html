@@ -1,3 +1,6 @@
-<p>
-  master works!
-</p>
+<mat-card *ngFor="let r of role | async; let i = index">
+  <mh-role-item [role]="r" [index]="i" (update)="onSubmit($event)"></mh-role-item>
+</mat-card>
+<div class="fab-container">
+  <button (click)="addEvent()" mat-fab color="primary"><span class="fab-text">+</span></button>
+</div>

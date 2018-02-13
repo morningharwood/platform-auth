@@ -1,0 +1,25 @@
+<form [formGroup]="roleForm" (ngSubmit)="onSubmit(roleForm)">
+
+
+  <input
+    formControlName="id" placeholder="Your id"
+    [value]="role.id"
+    readonly
+    hidden>
+
+  <p>id: {{role.id}}</p>
+
+  <mat-form-field>
+    <input matInput
+           formControlName="type"
+           placeholder="Your type"
+           [value]="role.type">
+  </mat-form-field>
+
+  <mat-card-actions>
+    <button mat-raised-button color="accent" type="submit">
+      Update
+    </button>
+
+  </mat-card-actions>
+</form>
